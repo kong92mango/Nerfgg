@@ -1,0 +1,34 @@
+{
+  "name": "nerfgg",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "ajv": "^6.5.4",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "kayn": "^0.8.24",
+    "league-api-2.0": "^3.0.0",
+    "leaguejs": "^1.10.1",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-scripts": "2.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}
