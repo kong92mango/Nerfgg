@@ -7,7 +7,7 @@ class SearchBar extends React.Component {
     this.state =({
       data:"",
       searchedSummoner:"",
-      apiHost:`https://nerfedgg.herokuapp.com/`
+      apiHost:`https://nerfedgg.herokuapp.com`
     });
     this.callServer = this.callServer.bind(this);
     this.getState = this.getState.bind(this);
