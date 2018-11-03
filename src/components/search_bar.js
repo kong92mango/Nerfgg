@@ -7,7 +7,7 @@ class SearchBar extends React.Component {
     this.state =({
       data:"",
       searchedSummoner:"",
-      apiHost:`https://nerfedgg.herokuapp.com/dataRoute`
+      apiHost:`https://nerfedgg.herokuapp.com/`
     });
     this.callServer = this.callServer.bind(this);
     this.getState = this.getState.bind(this);
@@ -18,7 +18,8 @@ class SearchBar extends React.Component {
   getState = () => this.state;
 
   callServer = () => {
-    fetch(`${this.state.apiHost}/dataRoute`,{
+    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+    fetch(proxyUrl+`${this.state.apiHost}/dataRoute`,{
        method: 'POST',
        body: JSON.stringify({
          summonerName: this.state.searchedSummoner
