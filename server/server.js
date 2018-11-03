@@ -69,4 +69,4 @@ app.post('/dataRoute', function (req, res) {
   })
 });
 
-app.listen(process.env.PORT || 8111);
+app.listen(process.env.PORT || 80);
