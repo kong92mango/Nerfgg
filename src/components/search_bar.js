@@ -18,7 +18,7 @@ class SearchBar extends React.Component {
   getState = () => this.state;
 
   callServer = () => {
-    fetch(`${this.state.apiHost}/dataRoute`,{
+    fetch(`https://nerfedgg.herokuapp.com/dataRoute`,{
        method: 'POST',
        body: JSON.stringify({
          summonerName: this.state.searchedSummoner
