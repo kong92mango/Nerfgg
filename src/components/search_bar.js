@@ -18,8 +18,7 @@ class SearchBar extends React.Component {
   getState = () => this.state;
 
   callServer = () => {
-    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-    fetch(proxyUrl+`${this.state.apiHost}/dataRoute`,{
+    fetch(`${this.state.apiHost}/dataRoute`,{
        method: 'POST',
        body: JSON.stringify({
          summonerName: this.state.searchedSummoner
@@ -28,7 +27,8 @@ class SearchBar extends React.Component {
      })
      .then(function(response){
        return response.json()
-     }).then(function(body){
+     })
+     .then(function(body){
        console.log(body);
        return body;
      }).then(body => this.setState({data: body}))
